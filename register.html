@@ -1,0 +1,63 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Register - KCA University</title>
+</head>
+<body>
+    <header>
+        <h1>Register for a Course</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="submit_registration.php" method="post">
+            <label for="course">Select a Course:</label>
+            <select id="course" name="course" required>
+                <option value="ba-counselling-psychology">Bachelor of Arts Counselling Psychology</option>
+                <option value="ba-criminology">Bachelor of Arts in Criminology</option>
+                <option value="ba-economics-business">Bachelor of Arts in Economics and Business Studies</option>
+                <option value="ba-film-technology">Bachelor of Arts in Film Technology and Performing Arts</option>
+                <option value="ba-journalism-media">Bachelor of Arts in Journalism and Digital Media</option>
+                <option value="bb-it">Bachelor of Business Information Technology</option>
+                <option value="bcom">Bachelor of Commerce</option>
+                <option value="bed-arts">Bachelor of Education Arts</option>
+                <option value="bed-early-childhood">Bachelor of Education Early Childhood Education</option>
+                <option value="bbm">Bachelor of International Business Management</option>
+                <option value="bpl">Bachelor of Procurement and Logistics</option>
+                <option value="bpm">Bachelor of Public Management</option>
+                <option value="bsc-actuarial-science">Bachelor of Science in Actuarial Science</option>
+                <option value="bsc-applied-computing">Bachelor of Science in Applied Computing</option>
+                <option value="bsc-data-science">Bachelor of Science In Data Science</option>
+                <option value="bsc-economics-statistics">Bachelor of Science in Economics & Statistics</option>
+                <option value="bsc-ict">Bachelor of Science in Information and Communications Technology</option>
+                <option value="bsc-info-sec-forensics">Bachelor of Science in Information Security and Forensics</option>
+                <option value="bsc-it">Bachelor of Science in Information Technology</option>
+                <option value="bsc-software-dev">Bachelor of Science in Software Development</option>
+            </select>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 KCA University</p>
+    </footer>
+</body>
+</html>
